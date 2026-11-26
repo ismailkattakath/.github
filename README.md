@@ -1,12 +1,14 @@
 # .github
 
 [![ci: build status on main](https://github.com/ismailkattakath/.github/actions/workflows/ci.yml/badge.svg?branch=main&event=push)](https://github.com/ismailkattakath/.github/actions/workflows/ci.yml)
-[![license: MIT](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
+[![license: MIT](https://img.shields.io/github/license/ismailkattakath/.github)](LICENSE)
 
-Default community health files for every public `ismailkattakath` repository.
+> Default community health files for every public ismailkattakath repository.
 
-GitHub serves the files in [`.github/`](.github) to every public repository of this account
-that has no copy of its own
+## Usage
+
+There is nothing to install. GitHub serves the files in [`.github/`](.github) to every public
+repository of this account that has no copy of its own
 ([GitHub docs](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/creating-a-default-community-health-file)):
 
 | File | Purpose |
@@ -20,9 +22,10 @@ that has no copy of its own
 
 ## Maintaining
 
-Every file except `flake.nix` and this README is **generated** by
-[repo-kit](https://github.com/ismailkattakath/repo-kit). The text is shared with
-[`kattakath/.github`](https://github.com/kattakath/.github), so change it in repo-kit, then:
+These files, plus `LICENSE`, `.envrc`, `.editorconfig` and `.devcontainer/devcontainer.json`,
+are **generated** by [repo-kit](https://github.com/ismailkattakath/repo-kit). Never edit them
+here. The text is shared with [`kattakath/.github`](https://github.com/kattakath/.github), so
+change it in repo-kit, then:
 
 ```sh
 nix flake update repo-kit
@@ -32,6 +35,11 @@ nix flake check   # fails if any file differs from what repo-kit generates
 
 The design is ADR-016 in
 [kattakath/nix-config](https://github.com/kattakath/nix-config/blob/main/docs/fleet-repo-shape-adr.md).
+
+## Contributing
+
+See [`.github/CONTRIBUTING.md`](.github/CONTRIBUTING.md). A change to the shared text belongs in
+[repo-kit](https://github.com/ismailkattakath/repo-kit).
 
 ## License
 
